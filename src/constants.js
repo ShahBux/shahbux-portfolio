@@ -13,7 +13,7 @@ export const personalInfo = {
   description: "Crafting beautiful, scalable web applications with modern technologies. Passionate about clean code and exceptional user experiences.",
   email: "pitafishahbux@gmail.com",
   phone: "+923323654756",
-  location: "PECHS Block 2, Tariq Road, Karachi, Pakistan",
+  location: "Block 13 D Gulshan e Iqbal Karachi pakistan",
   cvUrl: "https://drive.google.com/uc?export=download&id=1Be21-6WOTYDHc9JnXDg12jQc1tpvFiq3",
 };
 
@@ -171,6 +171,6 @@ export const experiences = [
 export const contactInfo = [
   { label: "Email", value: "pitafishahbux@gmail.com" },
   { label: "Phone", value: "+923323654756" },
-  { label: "Location", value: "PECHS Block 2, Tariq Road, Karachi, Pakistan" },
+  { label: "Location", value: "Block 13 D Gulshan e Iqbal Karachi pakistan" },
 ];
 
