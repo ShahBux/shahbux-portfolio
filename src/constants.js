@@ -4,6 +4,8 @@ import moveFlex from "../src/assets/movie_flex01.png";
 import ytClone from "../src/assets/yt-clone01.png";
 import solidSync from "../src/assets/solid-sinc01.png";
 import simpleTest from "../src/assets/simple-test01.png";
+import Estate from "../src/assets/E-state-dotserviz.png";
+import Estate_crm from "../src/assets/estate-crm.png";
 
 export const personalInfo = {
   name: "Shah Bux",
@@ -74,6 +76,23 @@ export const skills = [
 ];
 
 export const projects = [
+    {
+    title: "E-state",
+  description: "A modern real estate platform developed at DotServiz using Next.js and JavaScript. Built with a scalable architecture, optimized performance, and fully responsive UI. Integrated dynamic components, reusable design system using Core Css for a seamless user experience across devices.",
+
+    tech: ["Next Js ", "JavaScript", "Css ", "Redux"],
+    image: Estate,
+    github: "#",
+    live: "https://ben-estate.netlify.app/",
+  },
+      {
+    title: "E-state Crm",
+  description: "A feature-rich real estate CRM application built using React.js and Material UI. Designed to manage property listings, client data, and sales workflows efficiently. Implemented global state management with Context API to ensure scalable and maintainable architecture, along with a responsive and user-friendly dashboard interface.",
+    tech: [" React Js ", "JavaScript", "Material UI", "Context API", "Axios"],
+    image: Estate_crm,
+    github: "#",
+    live: "https://estate-crm.dotserviz.co/",
+  },
   {
     title: "Design Showroom",
     description: "Modern design showroom built for practice using React, TypeScript, and responsive layout.",
@@ -113,14 +132,6 @@ export const projects = [
     image: solidSync,
     github: "https://github.com/ShahBux/Solid-Sync",
     live: "https://solid-sync.vercel.app/",
-  },
-  {
-    title: "Portfolio CMS",
-    description: "Simple dashboard project with API integration and local storage for authentication and data management.",
-    tech: ["React Js ", "TypeScript", "shadcn "],
-    image: simpleTest,
-    github: "https://github.com/ShahBux/dashboard-test",
-    live: "https://dashboard-test-neon.vercel.app/",
   },
 ];
 

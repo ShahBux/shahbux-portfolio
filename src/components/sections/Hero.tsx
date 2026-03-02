@@ -177,7 +177,7 @@ export const Hero = () => {
           </Button>
         </div>
 
-        <div className="flex gap-4 justify-center mt-8 relative z-10">
+        <div className="flex flex-wrap md:flex-nowrap justify-center gap-3 sm:gap-4 mt-8 relative z-10 px-4 w-full">
           <a
             href={socialLinks.linkedin}
             target="_blank"
