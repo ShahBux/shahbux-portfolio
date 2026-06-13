@@ -125,7 +125,7 @@ export const Hero = () => {
         ref={textRef}
         className="relative z-10 container mx-auto px-4 text-center"
       >
-        <div className="hero-profile flex justify-center mb-8 md:mt-20">
+        {/* <div className="hero-profile flex justify-center mb-8 md:mt-20">
           <div className="relative z-10">
             <div
               className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary animate-spin-slow blur-md"
@@ -138,6 +138,15 @@ export const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+          </div>
+        </div> */}
+        <div className="hero-profile flex justify-center mb-8 md:mt-20">
+          <div className="relative w-36 h-36 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-primary shadow-lg">
+            <img
+              src={profileImg}
+              alt={personalInfo.name}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
@@ -208,7 +217,7 @@ export const Hero = () => {
               <Users className="h-5 w-5" />
             </Button>
           </a>
-
+          {/* 
           <a
             href={socialLinks.faceboook}
             target="_blank"
@@ -218,13 +227,13 @@ export const Hero = () => {
             <Button variant="ghost" size="icon" className="rounded-full">
               <Facebook className="h-5 w-5" />
             </Button>
-          </a>
+          </a> */}
           <a href={`tel:${personalInfo.phone}`} className="hero-cta hover-lift">
             <Button variant="ghost" size="icon" className="rounded-full">
               <Phone className="h-5 w-5" />
             </Button>
           </a>
-
+          {/* 
           <a
             href={socialLinks.twitter}
             target="_blank"
@@ -244,7 +253,7 @@ export const Hero = () => {
             <Button variant="ghost" size="icon" className="rounded-full">
               <Instagram className="h-5 w-5" />
             </Button>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

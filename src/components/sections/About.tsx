@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Card } from "@/components/ui/card";
-import { Code2, Palette, Rocket } from "lucide-react";
+import { Code2, Palette, Rocket, Plug, Monitor, Layers } from "lucide-react";
 import { aboutFeatures, aboutDescription } from "@/constants";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -39,6 +39,9 @@ export const About = () => {
     { ...aboutFeatures[0], icon: Code2 },
     { ...aboutFeatures[1], icon: Palette },
     { ...aboutFeatures[2], icon: Rocket },
+    { ...aboutFeatures[3], icon: Plug },
+    { ...aboutFeatures[4], icon: Monitor },
+    { ...aboutFeatures[5], icon: Layers },
   ];
 
   return (
@@ -58,9 +61,11 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* About Section  */}
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => {
-            const Icon = feature.icon;
+            const Icon = feature?.icon;
             return (
               <Card
                 key={index}
@@ -69,8 +74,8 @@ export const About = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 glow-effect">
                   <Icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{feature?.title}</h3>
+                <p className="text-muted-foreground">{feature?.description}</p>
               </Card>
             );
           })}

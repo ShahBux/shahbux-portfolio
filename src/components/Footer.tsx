@@ -60,6 +60,12 @@ export const Footer = () => {
               </a>
 
               <a
+                href={`tel:${socialLinks.phone}`}
+                className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all hover-lift"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
+              {/* <a
                 href={socialLinks.facebook || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,20 +75,13 @@ export const Footer = () => {
               </a>
 
               <a
-                href={`tel:${socialLinks.phone}`}
-                className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all hover-lift"
-              >
-                <Phone className="h-5 w-5" />
-              </a>
-
-              <a
                 href={socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all hover-lift"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
