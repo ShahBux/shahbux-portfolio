@@ -125,6 +125,7 @@ export const Hero = () => {
         ref={textRef}
         className="relative z-10 container mx-auto px-4 text-center"
       >
+        {/* Layout Changes */}
         {/* <div className="hero-profile flex justify-center mb-8 md:mt-20">
           <div className="relative z-10">
             <div
